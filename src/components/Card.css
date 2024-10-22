@@ -1,0 +1,105 @@
+.ticket-header {
+  display: flex;
+  justify-content: space-between; /* Ensures ticket ID is left, avatar is right */
+  align-items: center; /* Vertically centers both the ID and avatar */
+  margin-bottom: 12px; /* Space between header and body */
+}
+
+
+/* Ticket card styling */
+.ticket-card {
+  position: relative;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 215px; /* Fixed width for all cards */
+  height: 200px; /* Fixed height for all cards */
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keeps footer aligned at the bottom */
+}
+
+.ticket-body {
+  display: flex;
+  align-items: center; /* Aligns items in the center vertically */
+  justify-content: flex-start; /* Aligns items to the left */
+}
+
+.title-container {
+  display: flex;
+  align-items: center; /* Aligns icon and title in the same line */
+  justify-content: flex-start;
+  flex-direction: row; /* Ensures icon and title are side-by-side */
+}
+
+.status-icon-left {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px; /* Adds space between icon and title */
+}
+
+.ticket-title {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  white-space: normal; /* Allow text wrapping */
+  word-wrap: break-word;
+  max-width: calc(100% - 40px); /* Ensure proper width without overflowing */
+  line-height: 1.2em;
+  text-align: left;
+}
+
+/* Ticket footer styling */
+.ticket-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.priority-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Avatar styling */
+.user-avatar, .initials-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.initials-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Circle text-box */
+.circle-text-box {
+  display: flex;
+  align-items: center;
+  padding: 4px 4px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 8px;
+}
+
+.feature-request {
+  font-size: 14px;
+  color: #757575;
+}

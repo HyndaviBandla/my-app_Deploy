@@ -1,0 +1,77 @@
+/* Header Container */
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+/* Dropdown button for "Display" */
+.display-dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures the icon stays on the right */
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  min-width: 120px; /* Set minimum width if needed */
+}
+
+/* Icon on the left (Display.svg) */
+.display-icon {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+/* Dropdown arrow icon on the right (Down.svg) */
+.dropdown-icon {
+  margin-left: 8px; /* Gap between the text and the arrow */
+  width: 20px;
+  height: 26px;
+}
+
+
+/* Dropdown content that will appear on button click */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+  margin-top: 5px;
+  border-radius: 4px;
+  min-width: 150px;
+  border: 1px solid #ccc;
+}
+
+/* Show the dropdown content when the button is hovered */
+.display-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown items (Grouping and Sorting) */
+.dropdown-item {
+  margin-bottom: 10px;
+}
+
+.dropdown-item label {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.dropdown-item select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

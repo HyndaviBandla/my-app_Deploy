@@ -38,7 +38,7 @@ const Header = ({ setGrouping, setSorting }) => {
           </div>
           {/* Sorting options */}
           <div className="dropdown-item">
-            <label>Sort by:</label>
+            <label>Ordering:</label>
             <select onChange={handleSortingChange}>
               <option value="priority">Priority</option>
               <option value="title">Title</option>
